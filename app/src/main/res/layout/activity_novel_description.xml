@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".NovelDescriptionActivity">
+
+    <ImageView
+        android:id="@+id/im_novel_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--android:scaleType="centerCrop"-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/novelMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_toolbar"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="vertical"-->
+        <!--&gt;-->
+        <!--android:fillViewport="true"-->
+        <!--android:background="@drawable/square_frame"-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/llout_descripTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_4"
+            android:orientation="horizontal">
+            <!--android:background="@drawable/shape_sliding_option_color"-->
+
+            <TextView
+                android:id="@+id/tv_novelNameDescirption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Name's Chapter"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/triangle_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:onClick="expandTitleNovel">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_arrow_down" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="#c0c0c0"-->
+        <!--&gt;-->
+        <!--</View>-->
+        <!--android:layout_marginTop="?attr/actionBarSize"-->
+
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llout_novelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4f88a6"
+                android:orientation="vertical">
+                <!--Novel Title-->
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--&gt;-->
+                <!--</View>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Author:"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:id="@+id/tv_AuthorDescrip"-->
+                    <!--/>-->
+
+                    <TextView
+                        android:id="@+id/tv_chapterCountDescrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Số Chương: 0"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_LastestChapterDescrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Chương Mới:"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_updateDateDescrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Ngày Cập Nhật:"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ViewDescrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="6dp"
+                        android:text="View:"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <!--<TextView-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Rate:"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:id="@+id/tv_RateDescrip"-->
+                    <!--/>-->
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.8dp"
+                    android:background="#c0c0c0">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_selection_color"
+                        android:onClick="novelRate"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/icon_star" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_RateDescrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:text="0.0/5"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_rateCountDescrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:text="0 Rates"
+                                android:textColor="#ffffff"
+                                android:textSize="13.5sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.8dp"
+                        android:layout_height="match_parent"
+                        android:background="#c0c0c0">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_selection_color"
+                        android:onClick="novelFollow"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_followedNovel"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_heart_outline_white_48dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:text="Theo\nDõi"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.8dp"
+                        android:layout_height="match_parent"
+                        android:background="#c0c0c0">
+
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/download_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_selection_color"
+                        android:onClick="novelDownload"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/icon_cloud_storage_download" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:text="Tải\nXuống"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.8dp"
+                    android:background="#c0c0c0">
+
+                </View>
+            </LinearLayout>
+            <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/tabLayout_novel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/myLightBlue"-->
+            <!--app:tabIndicatorColor="@android:color/white"-->
+            <!--app:tabIndicatorHeight="4dp"-->
+
+            <!--app:tabPaddingStart="0dp"-->
+            <!--app:tabPaddingEnd="0dp" />-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout_novel"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/llout_novelTitle"
+                android:background="@drawable/shape_descrip_tablayout"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#ffffff"
+                app:tabIndicatorHeight="5dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabSelectedTextColor="@color/myTabLayout_Activated"
+                app:tabTextAppearance="@style/TabTextSize"
+                app:tabTextColor="#70BCE6"
+
+                >
+
+            </android.support.design.widget.TabLayout>
+
+            <com.valvrare.littlekai.valvraretranslation.widget.CustomViewPager
+                android:id="@+id/view_pager_novel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.valvrare.littlekai.valvraretranslation.widget.CustomViewPager>
+            <!--</FrameLayout>-->
+        </LinearLayout>
+
+        <!--</ScrollView>-->
+        <!--</android.support.v4.widget.NestedScrollView>-->
+    </LinearLayout>
+</RelativeLayout>

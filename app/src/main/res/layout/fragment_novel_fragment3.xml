@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="200dp"
+    tools:context="com.valvrare.littlekai.valvraretranslation.inner_fragment.NovelFragment3"
+    android:id="@+id/flout_novelFacebookPlugin"
+    >
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wv_novelcomment"
+        android:background="#deffffff"
+        >
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_FaceComment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:scrollbarStyle="insideOverlay"
+        />
+
+</FrameLayout>

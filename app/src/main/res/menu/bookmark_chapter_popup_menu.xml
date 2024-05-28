@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/name_sort"
+        android:title="Theo Tên"
+        />
+    <!--android:icon="@drawable/ic_sort_alphabetical_grey600_36dp"-->
+
+    <item
+        android:id="@+id/time_sort"
+        android:title="Theo Thời Gian"/>
+
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/color_sliding_state"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_chapterListName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapter's Name"
+                android:textColor="#795548"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/im_downloaded"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/memory_card" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_InsertedChapterDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="(Ngày Đăng Chương)"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--android:layout_gravity="end|top"-->
+
+
+        <!--android:textColor="#24619d"-->
+        <CheckBox
+            android:id="@+id/checkbox_fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:button="@android:drawable/btn_star"
+            android:checked="false"
+            android:focusable="false"
+            android:gravity="center" />
+        <!--<ImageView-->
+        <!--android:id="@+id/im_fav"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:src="@drawable/star_unfav" />-->
+
+    </LinearLayout>
+</LinearLayout>

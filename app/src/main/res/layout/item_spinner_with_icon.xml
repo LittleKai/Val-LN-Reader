@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#444444"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/ctv_image"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        />
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkTextView"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="4dp"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textSize="20sp"
+    android:text="sêfsfsdsgghhhrrrrrr"
+    />
+    </LinearLayout>
+    </LinearLayout>

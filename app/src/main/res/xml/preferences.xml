@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="preferences"
+        android:title="Cài Đặt">
+        <PreferenceScreen
+            android:key="general_category"
+            android:title="Cài Đặt Chung">
+            <PreferenceCategory android:title="Kết Nối và Bộ Nhớ">
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="3g_enable"
+                    android:title="Cho Phép Tải Bằng 3G" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="download_big_image"
+                    android:summary="Tải hình ảnh với độ phân giải tối đa.\nChú ý: Sẽ chiếm nhiều dung lượng của máy."
+                    android:title="Cho Phép Tải Hình Ảnh Full-Res" />
+                <Preference
+                    android:key="clear_image_cache"
+                    android:summary="Xóa toàn bộ Bộ Nhớ Tạm của Hình Ảnh.\nChú ý: Xóa Bộ Nhớ Tạm sẽ làm cho ứng dụng dùng nhiều dữ liệu mạng hơn để tải lại hình ảnh."
+                    android:title="Xóa Image Cache" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="notification_category"
+            android:title="Thông Báo">
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="notifications_new_message"
+                android:title="Nhận Thông Báo Khi Có Truyện Mới" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="notifications_new_message"
+                android:key="notifications_new_message_vibrate"
+                android:title="Báo Rung" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="notifications_new_message"
+                android:key="notifi_new_message_ringtone"
+                android:title="Chuông Báo" />
+
+            <ListPreference
+                android:defaultValue="180"
+                android:dependency="notifications_new_message"
+                android:entries="@array/pref_sync_frequency_titles"
+                android:entryValues="@array/pref_sync_frequency_values"
+                android:key="pref_check_frequency"
+                android:negativeButtonText="@null"
+                android:positiveButtonText="@null"
+                android:title="Thời Gian Định Kỳ Kiểm Tra Chương Mới" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="reading_layout_category"
+            android:title="Giao Diện Đọc">
+            <PreferenceCategory android:title="Thiết Lập Đọc">
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="zoom_enable"
+                    android:title="Cho Phép Zoom" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="always_light_on_enable"
+                    android:summary="Chức năng chưa được áp dụng. Chỉ để đây cho đỡ trống thôi :)."
+                    android:title="Màn Hình Luôn Sáng Khi Đọc" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="enable_webview_buttons"
+                    android:summary="Cho phép sử dụng Nút Động Lực để kéo lên đầu chương."
+                    android:title="Nút Động Lực" />
+            </PreferenceCategory>
+
+            <PreferenceCategory android:title="Bố Cục">
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="force_justified"
+                    android:summary="Canh đều hai bên lề của nội dung chương."
+                    android:title="Canh Giữa" />
+
+                <EditTextPreference
+                    android:defaultValue="120"
+                    android:dialogMessage="Hãy nhập độ rộng của khoảng cách giữa các dòng mà bạn muốn. (Mặc Định: 120)"
+                    android:dialogTitle="Khoảng Cách Giữa Các Dòng"
+                    android:inputType="number"
+                    android:key="line_spacing"
+                    android:negativeButtonText="Hủy"
+                    android:positiveButtonText="Lưu"
+                    android:summary="Thay đổi độ rộng khoảng cách giữa các dòng. Giá trị càng lớn, khoảng cách giữa các dòng càng rộng."
+                    android:title="Khoảng Cách Giữa Các Dòng" />
+                <EditTextPreference
+                    android:defaultValue="5"
+                    android:dialogMessage="Hãy nhập khoảng canh lề mà bạn muốn vào đây. Khoảng canh lề sẽ được tính theo phần trăm giữa hai bên trái phải. (Mặc Định: 5%)"
+                    android:dialogTitle="Canh Lề"
+                    android:inputType="number"
+                    android:key="margin_space"
+                    android:negativeButtonText="Hủy"
+                    android:positiveButtonText="Lưu"
+                    android:summary="Thay đổi khoảng trống giữa chữ và hai cạnh bên của màn hình."
+                    android:title="Canh Lề" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Tùy Chọn Màu">
+                <EditTextPreference
+                    android:key="css_background"
+                    android:title="Màu Nền"
+                    android:defaultValue="#004455"
+                    />
+                <EditTextPreference
+                    android:defaultValue="#c5bdbd"
+                    android:key="css_foreground"
+                    android:title="Màu Chữ" />
+                <EditTextPreference
+                    android:defaultValue="#31fde5"
+                    android:key="css_link"
+                    android:title="Màu Link" />
+                <EditTextPreference
+                    android:defaultValue="#444444"
+                    android:key="css_thumb-border"
+                    android:title="Màu Khung Table" />
+                <EditTextPreference
+                    android:defaultValue="#888888"
+                    android:key="css_thumb-back"
+                    android:title="Màu Nền Table" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="about"
+        android:title="Ứng Dụng">
+        <PreferenceScreen
+            android:key="update_log"
+            android:title="Nhật Ký Cập Nhật" />
+
+        <!--<PreferenceScreen-->
+        <!--android:key="credits"-->
+        <!--android:summary="Credits"-->
+        <!--android:title="Nhật Ký Cập Nhật"/>-->
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valvrare.littlekai.valvraretranslation.ExceptionActivity">
+
+    <include
+        android:id="@+id/toolbar_activity" layout="@layout/toolbar_activity_layout" />
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar_activity">
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gủi Báo Cáo Lỗi" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/send"
+        android:text="Thoát" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/exceptionScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_below="@id/button"
+        android:requiresFadingEdge="horizontal">
+
+        <TextView
+            android:id="@+id/exceptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</RelativeLayout>

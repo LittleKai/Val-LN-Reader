@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_toolbar"
+            android:fitsSystemWindows="true"
+            android:minHeight="48dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="appbar_scrolling_view_behavior">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_pane"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/shape_sliding_option_color"
+        android:orientation="vertical">
+
+        <!--android:background="@drawable/pic_1"-->
+        <!--<android.support.v4.widget.NestedScrollView-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="UselessParent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlout_loginface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+                <!--android:layout_below="@+id/rlout_loginface"-->
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--&gt;-->
+                <!--android:background="@drawable/shape_toolbar"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_tablayout"
+                    android:gravity="center_vertical"
+                    android:text="  THỂ LOẠI"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <!--</RelativeLayout>-->
+
+                       <com.valvrare.littlekai.valvraretranslation.widget.MyListView
+                    android:id="@+id/lvValListMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:foregroundGravity="center"
+                    >
+                    <!--android:listSelector="@drawable/activated_listview_main_press_state"-->
+                </com.valvrare.littlekai.valvraretranslation.widget.MyListView>
+
+                <!--Drawer Pane-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_toolbar"-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_tablayout1"
+                    android:gravity="center_vertical"
+                    android:text="  HỆ THỐNG"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <!--</RelativeLayout>-->
+
+                <com.valvrare.littlekai.valvraretranslation.widget.MyListView
+                    android:id="@+id/lvOptionMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice">
+
+                </com.valvrare.littlekai.valvraretranslation.widget.MyListView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

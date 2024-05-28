@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.valvrare.littlekai.valvraretranslation.AboutActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_reading_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarColoredBackArrow">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/light_novel_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="#ff002a51"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="VALVRARE LIGHT NOVEL READER"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Phiên Bản "
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Android Developer: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LittleKai"
+                    android:textColor="#ff0000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Ứng dụng được phát triển bởi nhóm Valvrare:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/infoTxtCredits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="http://valvrareteam.com/"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!--android:textColor="#0000ff"-->
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner_frame"
+                android:orientation="vertical"
+                android:padding="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/about_click_state"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginTop="2dp"
+                    android:onClick="introduce"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Giới Thiệu"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrow_point_to_right" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff002a51" />
+                <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+                    android:padding="10dp"
+                    >
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Phản Hồi và Góp Ý:"
+              android:textSize="18sp" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="50dp"
+              android:layout_marginStart="50dp"
+              android:background="@drawable/about_click_state"
+              android:onClick="facebook_feedback"
+              android:orientation="horizontal"
+              android:paddingBottom="4dp"
+              android:paddingTop="4dp"
+              android:paddingLeft="4dp"
+              android:paddingStart="4dp"
+              >
+
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/facebook" />
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:text="   \@Anh Duc Nguyen"
+                  android:textSize="16sp" />
+
+              <ImageView
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/arrow_point_to_right" />
+          </LinearLayout>
+          <!--<View-->
+
+          <!--android:layout_marginLeft="50dp"-->
+          <!--android:layout_marginStart="50dp"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="0.4dp"-->
+          <!--android:background="#ff002a51" />-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="50dp"
+              android:layout_marginStart="50dp"
+              android:layout_marginTop="2dp"
+              android:background="@drawable/about_click_state"
+              android:onClick="googleFeekback"
+              android:orientation="horizontal"
+              android:paddingBottom="4dp"
+              android:paddingTop="4dp"
+              android:paddingLeft="4dp"
+              android:paddingStart="4dp"
+              >
+
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/ic_google_plus" />
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:text="   \@LittleKai"
+                  android:textSize="16sp" />
+
+              <ImageView
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/arrow_point_to_right" />
+          </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/about_click_state"
+                        android:onClick="browser_feedback"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingStart="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_chrome" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="   \@ValvrareTeam.com"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/arrow_point_to_right" />
+                    </LinearLayout>
+
+      </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff002a51" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/about_click_state"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:onClick="checkVersion"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kiểm Tra Phiên Bản Mới Nhất"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrow_point_to_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff002a51" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/about_click_state"
+                    android:orientation="horizontal"
+                    android:onClick="rateApp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Đánh Giá Ứng Dụng"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrow_point_to_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff002a51" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/about_click_state"
+                    android:orientation="horizontal"
+                    android:onClick="fanpageGoto"
+                    android:padding="10dp"
+                    android:layout_marginBottom="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Fanpage trên Facebook"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrow_point_to_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="ⱴ Valvrare Team 2017."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="****\n-->
+<!--Valvrare Team là nhóm dịch được thành lập bởi những thành viên có cùng chung niềm đam mê với Light Novel.\n-->
+<!--Bản dịch của nhóm được chia sẻ hoàn toàn miễn phí cho mọi người, xin vui lòng không sao chép và đăng ở website khác khi chưa được sự đồng ý của chúng tôi, và nghiêm cấm sử dụng bản dịch của nhóm để kinh doanh dưới mọi hình thức.\n-->
+<!--Cám ơn các bạn đã quan tâm và ủng hộ nhóm."-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="italic"-->
+                <!--/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

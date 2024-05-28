@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/novelMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_sliding_option_color"
+    android:orientation="vertical"
+    tools:context="com.valvrare.littlekai.valvraretranslation.DownloadActivity">
+
+    <FrameLayout
+        android:id="@+id/flout_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include xmlns:android="http://schemas.android.com/apk/res/android"
+            layout="@layout/toolbar_activity_layout" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/myStrongGreen"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btn_download_range"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/color_button_state"
+                android:gravity="center"
+                android:text="Chọn Khoảng"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/color_button_state"
+                android:text="Tải Về (0)"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

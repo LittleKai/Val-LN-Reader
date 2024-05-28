@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="48dp"
+android:background="@drawable/shape_reading_toolbar"
+android:minHeight="48dp"
+android:id="@+id/toolbar_activity_reading"
+android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    >
+</android.support.v7.widget.Toolbar>
+    <!--    android:layout_centerHorizontal="true"-->

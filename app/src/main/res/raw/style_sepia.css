@@ -1,0 +1,180 @@
+
+/*	Body of the whole page	(Margins and background-color should be changed here*/
+body {
+ background-color: #e0d8c3;
+ color: #51452f;
+ margin-left: 5%;
+ margin-right: 5%;
+ margin-top: 5%;
+ margin-bottom: 5%;
+ word-wrap:break-word !important;
+}
+
+/*******************************************
+*	STANDARD NOVEL TEXT SETTINGS
+*	
+********************************************/
+
+li {	/* List Items */
+    margin-bottom: .1em;
+}
+
+ul {	/* Unordered List Container (ie Bullet Points) */
+    line-height: 1.5em;
+    list-style-type: square;
+    margin: 0.3em 0 0 1.6em;
+    padding: 0;
+}
+.highlighted { /* Highlighted Text */
+	background-color : orange !important;
+}
+
+/* Modified for larger touch area */
+.reference {
+	letter-spacing: 10px;
+}
+.mw-cite-backlink{
+	font-size: xx-large;
+	letter-spacing: 10px;
+}
+
+
+a {	/*Link*/
+    background: none repeat scroll 0 0 transparent;
+    color: #159f61;
+    text-decoration: none;
+}
+/**************************************************
+*	PICTURE SETTINGS
+**************************************************/
+
+/*	For Image Thumbnail in Content	*/
+div.thumb {
+    background-color: transparent;
+    margin-bottom: 0.5em;
+    width: auto;
+}
+div.tright, div.floatright, table.floatright {
+	margin: 0.5em 0 1.3em 1.4em;
+    clear: right;
+    float: right;
+}
+div.thumbinner {
+    background-color:#ffffff ;
+    border: 1px solid #333333;
+    font-size: 94%;
+    overflow: hidden;
+    padding: 3px !important;
+    text-align: center;
+}
+html .thumbcaption {
+    border: medium none;
+    font-size: 94%;
+    line-height: 1.4em;
+    padding: 3px !important;
+    text-align: left;
+}
+.thumbcaption {
+    text-align: left;
+}
+
+/* Handles pictures in the Illustration page	*/
+ul.gallery {
+    display: block;
+	text-align: center;
+    padding: 2px;
+	
+}
+
+li.gallerybox {
+	border: 2px solid #222222;
+	margin-bottom: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+li.gallerybox div.thumb {
+    background-color: #060606;
+    border: 1px solid #333333;
+	text-align: center;
+	margin: 2px;
+}
+
+div.gallerytext {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+div.gallerytext > p {
+	margin: 0px 0px 0px 0px	!important;
+	font-family: Tahoma, Verdana;
+}
+
+/* Generic image handler for non thumbnailed image */
+a:not(.internal) > img {	
+	width: 100%	!important;
+	height: auto !important;
+}
+
+/* Handles pictures in the Illustration page for the following:
+*	Boku wa Tomodachi ga Sukunai, Volume 1, Colour Illustration 2	
+*
+*	NOTE: There is no real way to differentiate between the navigation bar at the bottom of
+*	the screen and the table that contains the illustrations.
+*/
+
+div.floatnone > a > img {
+	width: 100%	!important;
+	height: auto !important;
+}
+
+div.floatleft > a > img {
+	width: 100%	!important;
+	height: auto !important;
+}
+
+td {
+	vertical-align: top;
+}
+
+table:not([class]) ,table:not([class])> tbody >tr >td {
+	background-color: #ffffff !important;
+	border: solid 1px #000000;
+	border-spacing: 0px;
+}
+
+/********************************************
+* Wikitable 
+********************************************/
+table.wikitable {
+	margin: 1em 1em 1em 0;
+	background-color: #060606 !important;
+	border: 1px #555 solid;
+	border-collapse: collapse;
+	color: white;
+}
+
+table.wikitable>tr>th, table.wikitable>tr>td,table.wikitable>*>tr>th,table.wikitable>*>tr>td {
+	border: 1px #555 solid;
+	padding: 0.2em;
+}
+
+table.wikitable>tr>th, table.wikitable>*>tr>th {
+	background-color: #0D0D0D !important;
+	text-align: center;
+}
+
+table.wikitable>caption {
+	font-weight: bold;
+}
+
+/******************************************************************************
+* HIDING UNWANTED ELEMENTS
+*******************************************************************************/
+#siteSub, #catlinks, #jump-to-nav, .printfooter, .editsection, .collapsed, .mw-editsection /*, .thumbcaption, .toc*/ {
+	display:none !important;
+}
+
+/* hide {{Template:PREVIEW}} which have bad class name: {{{id}}} */
+table.\{\{\{id\}\}\} {
+    display:none !important;
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llout_HistoryNovel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/color_sliding_state"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+
+        <ImageView
+            android:id="@+id/iv_novelIcon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle_frame"
+            android:largeHeap="true"
+            android:padding="1.2dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_novelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="Novel's Name"
+                android:textColor="#298cda"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_ChapterAmount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Số Chương: "-->
+            <!--android:textSize="12sp" />-->
+            <TextView
+                android:id="@+id/tv_LastestHistoryChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="3"
+                android:text="Chương Vừa Đọc:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_HistoryNovelDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian đọc:"
+                android:textSize="12sp" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_NovelView"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Lượt Xem:"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_NovelRate"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Rate:"-->
+            <!--android:textSize="12sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_Update"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="3dp"-->
+            <!--android:text="Ngày Cập Nhật: "-->
+            <!--android:textSize="12sp" />-->
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/llout_HomeNovel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_novelIcon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_frame"
+            android:largeHeap="true"
+            android:padding="1.2dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_novelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Novel's Name"
+                android:textColor="#298cda"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_ChapterAmount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Số Chương: "-->
+            <!--android:textSize="12sp" />-->
+
+            <TextView
+                android:id="@+id/tv_LastestChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="3"
+                android:text="Chương Mới:"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_NovelView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lượt Xem:"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_NovelRate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rate:"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Ngày Cập Nhật: "
+                android:maxLines="3"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

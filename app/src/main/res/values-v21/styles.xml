@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myReadingOptionMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">9dp</item>
+        <!--<item name="android:dropDownListViewStyle">@style/myListViewDropDownStyle</item>-->
+        <!--<item name="android:popupBackground">#de6ABFB7</item>-->
+        <!--<item name="android:popupBackground">@drawable/shape_reading_toolbar</item>-->
+    </style>
+
+    <style name="myAppOptionMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <!--<item name="android:dropDownListViewStyle">@style/myListViewDropDownStyle</item>-->
+        <!--<item name="android:popupBackground">#556ABFB7</item>-->
+        <!--<item name="android:popupBackground">@drawable/shape_reading_toolbar</item>-->
+    </style>
+
+    <style name="myListViewDropDownStyle">
+        <item name="android:divider">#000000</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+</resources>

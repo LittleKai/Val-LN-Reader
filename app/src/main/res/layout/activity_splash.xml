@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_splash_background"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.valvrare.littlekai.valvraretranslation.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:indeterminateTint="#ffff0000"
+            android:indeterminateTintMode="src_atop"
+            />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="3"
+            android:text="Valvrare LN Reader"
+            android:textColor="#ffff66"
+            android:textSize="14sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_splash"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>

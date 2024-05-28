@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/color_sliding_state"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+        <!--<com.valvrare.littlekai.valvraretranslation.widget.SquareImageView-->
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/im_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginEnd="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_chapterListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter's Name"
+            android:textColor="#795548"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <TextView
+                android:id="@+id/tv_InsertedChapterDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Second Name)"
+                android:lines="2"
+                android:textSize="12sp">
+            </TextView>
+
+            <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1.01" />-->
+
+            <ImageView
+                android:id="@+id/im_downloaded"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/memory_card" />
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <CheckBox
+            android:id="@+id/checkbox_fav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:button="@android:drawable/btn_star"
+            android:checked="false"
+            android:focusable="false"
+            android:gravity="center" />
+
+</LinearLayout>

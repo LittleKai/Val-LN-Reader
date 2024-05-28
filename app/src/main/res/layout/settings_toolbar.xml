@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar1"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:minHeight="48dp"
+    app:navigationContentDescription="@string/abc_action_bar_up_description"
+    android:background="@drawable/shape_reading_toolbar"
+    app:navigationIcon="?attr/homeAsUpIndicator"
+    app:title="Thiết Lập" />

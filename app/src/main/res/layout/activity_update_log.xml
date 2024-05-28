@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.valvrare.littlekai.valvraretranslation.UpdateLogActivity">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_reading_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarColoredBackArrow">
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:padding="8dp"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUpdateLog"
+        android:text="– Ngày 02/03/2017:\n
+     + Đã tăng thêm tốc độ load danh sách chương.\n
+     + Sửa lỗi đôi lúc load chương truyện “bất tử”, không thể tắt được.\n
+     + Cải thiện giao diện trong danh sách chương.\n
+     + Sửa lỗi hiện sai chương đã tải, và chương đã tải xong không thông báo.\n
+– Ngày 04/03/2017:\n
+     + Sửa lỗi khi tìm kiếm chương, nhấn vào Tải Xuống hiện sai danh sách.\n
+     + Thay đổi, và thêm chức năng cho đánh đấu chương.\n
+     + Tăng tốc độ tải hình ảnh truyện trong lần đầu sử dụng App (Thử Nghiệm).\n
+     + Sửa lỗi Chương Mới Nhất hiện “null”.\n
+– Ngày 05/03/2017:\n
+     + Cải thiện tốc độ load hình ảnh, giảm mức độ sử dụng dữ liệu mạng.\n
+     + Nâng cấp giao diện trong trang nội dung truyện.\n
+– Ngày 06/03/2017:\n
+     + Sửa lỗi đăng nhập facebook.\n
+     + Sửa lỗi không hiển thị hình ảnh đối với những chương đã được tải về trong Android 6.0 trở lên.\n
+– Ngày 12/03/2017:\n
+     + Thêm điều hướng cho Notifications.\n
+     + Thêm chức năng thông báo chương mới (Thử Nghiệm).\n
+     + Chọn truyện trong mục truyện đã tải: sẽ không lấy danh sách chương từ web mà lấy danh sách truyện từ bộ nhớ sử dụng lần trước.\n
+– Ngày 16/03/2017:\n
+     + Thêm chức năng Zoom.\n
+     + Tạo Mục Setting.\n
+– Ngày 28/03/2017:\n
+     + Sửa lỗi lưu sai vị trí đọc khi Zoom.\n
+     + Tăng tốc độ load nội dung chương.\n
+     + Sửa lỗi không thể đọc được nội dung chương đối với những chương có ký tự đặc biệt hoặc đường dẫn có chứa dấu tiếng Việt.\n
+     + Sửa lỗi Notification bị đứng khi hủy tải truyện.\n
+     + Sửa lỗi không lấy được danh sách chương đối với truyện “Dragon’s Bloodline”.\n
+– Ngày 01/04/2017:\n
+     + Thêm nút kéo lên đầu chương.\n
+     + Sửa lỗi khi nhấn vào đường dẫn khác gây trắng màn hình trong bình luận facebook.\n
+     + Giới hạn số chương Tải Xuống.\n
+     + Thêm chức năng Custom Background (Tham khảo từ App Baka Reader Ex).\n
+     + Cập nhật thêm Setting."
+
+        />
+</ScrollView>
+</LinearLayout>

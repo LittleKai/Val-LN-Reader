@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/et_search"
+    android:drawableLeft="@drawable/ic_magnify_white_48dp"
+    android:imeOptions="actionSearch"
+    android:singleLine="true"
+    android:inputType="number|textCapSentences"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

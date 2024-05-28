@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.valvrare.littlekai.valvraretranslation">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- android:hardwareAccelerated="true" -->
+    <!-- android:largeHeap="true" -->
+    <application
+        android:name=".helper.LNReaderApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/light_novel_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppReadingTheme">
+        <service android:name=".service.FetchLatestService" />
+        <service android:name=".service.DownloadService" />
+
+        <receiver android:name=".service.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NovelDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChapterReadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!-- android:theme="@style/AppReadingTheme" -->
+
+        <activity
+            android:name=".ChapterCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DownloadActivity"
+            android:screenOrientation="portrait" />
+        <!-- android:theme="@style/customTheme" -->
+        <activity
+            android:name=".BookmarkChapterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NovelSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait">
+
+            <!-- android:theme="@style/SettingTheme" -->
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme" />
+        <!--
+ATTENTION: This was auto-generated to add Google Play services to your project for
+App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".UpdateLogActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DisplayImageActivity">
+
+        </activity>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+    </application>
+
+</manifest>

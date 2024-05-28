@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowMenuStyle">@style/myReadingOptionMenu</item>
+        <!--<item name="android:itemTextAppearance">@style/myTextMenu</item>-->
+        <item name="colorPrimary">#FF006E63</item>
+        <item name="colorPrimaryDark">#FF006E63</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+    </style>
+
+    <style name="AppReadingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="actionOverflowMenuStyle">@style/myReadingOptionMenu</item>-->
+        <item name="actionOverflowMenuStyle">@style/myAppOptionMenu</item>
+        <!--<item name="android:itemTextAppearance">@style/myTextMenu</item>-->
+        <item name="colorPrimary">#FF006E63</item>
+        <item name="colorPrimaryDark">#FF006E63</item>
+        <item name="colorAccent">#FF0685b2</item>
+        <!--<item name="colorAccent">@color/colorPrimary</item>-->
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+    </style>
+
+    <style name="myTextMenu" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="myReadingOptionMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">9dp</item>
+        <!--<item name="android:dropDownListViewStyle">@style/myListViewDropDownStyle</item>-->
+        <!--<item name="android:popupBackground">#006ABFB7</item>-->
+        <!--<item name="android:popupBackground">@drawable/shape_reading_toolbar</item>-->
+    </style>
+
+    <style name="myAppOptionMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <!--<item name="android:dropDownListViewStyle">@style/myListViewDropDownStyle</item>-->
+        <!--<item name="android:popupBackground">#446ABFB7</item>-->
+        <!--<item name="android:popupBackground">@drawable/shape_reading_toolbar</item>-->
+    </style>
+
+    <style name="myListViewDropDownStyle">
+        <item name="android:divider">#000000</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="myDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="myAlertDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TabTextSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SettingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ff1DAFA3</item>
+        <item name="colorPrimaryDark">#FF006E63</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+        <!--<item name="android:textColorSecondary">@android:color/white</item>-->
+    </style>
+
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FF006E63</item>
+        <item name="colorPrimaryDark">#FF006E63</item>
+        <item name="colorAccent">#0685b2</item>
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+        <!--<item name="android:textColorSecondary">@android:color/white</item>-->
+    </style>
+
+
+</resources>

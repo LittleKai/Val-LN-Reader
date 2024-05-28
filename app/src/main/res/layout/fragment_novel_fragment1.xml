@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valvrare.littlekai.valvraretranslation.inner_fragment.NovelFragment1"
+    android:background="#deffffff"
+    android:orientation="vertical"
+    android:id="@+id/nv_fragment_2"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+        <!--android:background="#ffff77"-->
+        <android.support.v7.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Giới Thiệu:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_morDes"
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-7dp"
+            android:elevation="4dp"
+            android:text=" Xem Thêm "
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lỗi Lấy Dữ Liệu"
+            android:textColor="#ff0020"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="Tải Lại"
+            android:textColor="#4CAF50"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv_NovelIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_NovelDescrip"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        android:scrollbarStyle="insideInset"
+        android:visibility="gone" />
+
+</LinearLayout>

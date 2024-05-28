@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#81cbc4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGreenLight">#13f541</color>
+    <color name="myLightBlue">#49cbea</color>
+    <color name="myTabLayout_Activated">#ffffff</color>
+    <color name="myTabLayout_Unactivated">#ff70bbb4</color>
+    <color name="myTransparent">#00000000</color>
+    <color name="myColorGray">#b0b0b0</color>
+    <color name="myColorBlue_Activated">#ff1DAFA3</color>
+    <color name="myGreenBlue">#FF37474F</color>
+    <color name="myStrongGreen">#216337</color>
+    <color name="mySlidingMenu">#4D6990</color>
+    <color name="myActivityThemeColor">#ff009688</color>
+    <color name="sepiaText">#ff51452f</color>
+    <color name="sepiaBackground">#ffe0d8c3</color>
+    <color name="almost_black">#443830</color>
+    <color name="transparent">#80000000</color>
+    <color name="white">#ffffff</color>
+</resources>

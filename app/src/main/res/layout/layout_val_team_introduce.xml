@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff002a51"
+        android:drawableLeft="@drawable/ic_alert_circle_outline_white_48dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="  Giới Thiệu"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Nhóm Dịch Valvrare:"
+                android:textColor="#ff51452f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="\n****\n\nValvrare Team là nhóm dịch được thành lập bởi những thành viên có cùng chung niềm đam mê với Light Novel.\n
+Bản dịch của nhóm được chia sẻ hoàn toàn miễn phí cho mọi người, xin vui lòng không sao chép và đăng ở website khác khi chưa được sự đồng ý của chúng tôi, và nghiêm cấm sử dụng bản dịch của nhóm để kinh doanh dưới mọi hình thức.\n
+Cám ơn các bạn đã quan tâm và ủng hộ nhóm.\n"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/almost_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Đôi Lời của Người Phát Triển"
+                android:textColor="#ff51452f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="****\nVới tư cách là một Translator, Editor của ValvrareTeam và đồng thời là một Admin của Fanpage Hội Những Người Yêu Thích Light Novel, Valvrare LN Reader là Ứng Dụng được phát triển bởi tôi, LittleKai.\n
+Tôi rất vui lòng nhận được lời góp ý và giúp đỡ của các bạn để cho Ứng Dụng được hoàn thiện hơn.\n
+Thân."
+                android:textSize="16sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
