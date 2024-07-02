@@ -1,4 +1,5 @@
-Val-LN-Reader
+Val-LN-Reader App
+
 A lightweight and customizable light novel reader for Android devices.
 
 * This application works in conjunction with the Japanese light novel translation website http://valvareteam.com, however the website has officially ceased operations as of October 2023, and therefore the app will no longer be able to function either.
