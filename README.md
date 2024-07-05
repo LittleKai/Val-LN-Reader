@@ -22,27 +22,26 @@ A lightweight and customizable light novel reader for Android devices.
   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_010859_Valvrare%20LN%20Reader.jpg" width="320" alt="Main Page">
 </div>
 
-### History Tab
+### History + Favorites Tab
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240630_163753_Valvrare%20LN%20Reader.jpg" width="320" alt="History Tab">
+   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_010859_Valvrare%20LN%20Reader.jpg" width="320" alt="Favorites Tab">
 </div>
 
-### Favorites Tab
-<div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_010859_Valvrare%20LN%20Reader.jpg" width="320" alt="Favorites Tab">
-</div>
 
 ### Description Page
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_010913_Valvrare%20LN%20Reader.jpg" width="320" alt="Description Page">
-</div>
+    <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_011003_Valvrare%20LN%20Reader.jpg" width="320" alt="Description Page 2">
 
-### Description Page 2
-<div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_011003_Valvrare%20LN%20Reader.jpg" width="320" alt="Description Page 2">
 </div>
 
 ### Reading Page
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/Screenshot_20240622_010931_Valvrare%20LN%20Reader.jpg" width="320" alt="Reading Page">
-</div>
+  </div>
+
+### Customizable Setting
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240705_132128_Valvrare%20LN%20Reader.jpg" width="320">
+  </div>
