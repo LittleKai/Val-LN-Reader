@@ -16,32 +16,31 @@ A lightweight and customizable light novel reader for Android devices.
 - **Notification feature to alert users about new updates**
 
 ## Screenshots
+
 ### Main Page
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/received_677934167214287.jpeg" width="320" alt="Main Page">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010859_Valvrare%20LN%20Reader.jpg" width="320" alt="Main Page">
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/received_677934167214287.jpeg" width="240" alt="Main Page">
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010859_Valvrare%20LN%20Reader.jpg" width="240" alt="Main Page">
 </div>
 
 ### History + Favorites Tab
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240630_163753_Valvrare%20LN%20Reader.jpg" width="320" alt="History Tab">
-   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010902_Valvrare%20LN%20Reader.jpg" width="320" alt="Favorites Tab">
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240630_163753_Valvrare%20LN%20Reader.jpg" width="240" alt="History Tab">
+   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010902_Valvrare%20LN%20Reader.jpg" width="240" alt="Favorites Tab">
 </div>
 
 
 ### Description Page
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010913_Valvrare%20LN%20Reader.jpg" width="320" alt="Description Page">
-    <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_011003_Valvrare%20LN%20Reader.jpg" width="320" alt="Description Page 2">
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010913_Valvrare%20LN%20Reader.jpg" width="240" alt="Description Page">
+    <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_011003_Valvrare%20LN%20Reader.jpg" width="240" alt="Description Page 2">
 
 </div>
 
-### Reading Page
+### Reading Page & Customizable Setting
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010931_Valvrare%20LN%20Reader.jpg" width="320" alt="Reading Page">
-  </div>
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010931_Valvrare%20LN%20Reader.jpg" width="240" alt="Reading Page">
+  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240705_132128_Valvrare%20LN%20Reader.jpg" width="240" alt="Customizable Setting">
+</div>
 
-### Customizable Setting
-<div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240705_132128_Valvrare%20LN%20Reader.jpg" width="320">
-  </div>
+
