@@ -12,7 +12,7 @@ A lightweight and customizable light novel reader for Android devices.
 - **Bookmarking and note-taking capabilities**
 - **Offline reading mode**
 - **Connect to Facebook account, comment section using Facebook API**
-- **Interact with the website to get information on chapter lists, novel lists, images, etc**
+- **Interact with the website through API to get information on chapter lists, novel lists, images, etc**
 - **Notification feature to alert users about new updates**
 
 ## Screenshots
