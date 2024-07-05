@@ -25,7 +25,7 @@ A lightweight and customizable light novel reader for Android devices.
 ### History + Favorites Tab
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240630_163753_Valvrare%20LN%20Reader.jpg" width="320" alt="History Tab">
-   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010859_Valvrare%20LN%20Reader.jpg" width="320" alt="Favorites Tab">
+   <img src="https://github.com/LittleKai/Val-LN-Reader/blob/master/DEMO/Screenshot_20240622_010902_Valvrare%20LN%20Reader.jpg" width="320" alt="Favorites Tab">
 </div>
 
 
